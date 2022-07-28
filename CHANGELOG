@@ -1,0 +1,85 @@
+# 2022-07-28
+
+. Forking from the project `create-infi-backend-create`
+
+# 2022-07-19
+
+. Release 0.0.2
+
+# 2022-07-18
+
+. Added the docker compose file
+. Added the Kind file
+. Fixed a problem where .gitignore was not included
+
+# 2022-07-13 0.0.2-beta1
+
+. Added the prettierrc file to format code
+. Moved the config files to config/.env directory
+. Moved the type files of TypeScript to devDependencies
+
+# 2022-07-08 Release 0.0.1
+
+. 0.0.1
+. Sets timeout of jest
+. Sets the Firestore conf `ignoreUndefinedProperties` to true
+. Changed the NODE_ENV.prod to NODE_ENV.production
+. Removed the author code sample
+. Moved the dev docs to convention folder
+. Changed the name of some variables
+. Test cases using fake data
+
+
+# 2022-06-27
+
+. 0.0.1-beta2
+. Added the fake data generator for development env
+. Fixed the async/await errors
+. Flats the validation errors from class-validator
+. Added the exception test case and meta test case
+. Added the code style guide file
+. Updates for deploy-*, undeploy-* targets of Makefile
+
+# 2022-06-15
+
+. Changed the predefine the process.env.NODE_ENV values to ('dev' | 'prod' | 'staging' | 'local' | 'jest')
+
+# 2022-06-11
+
+. Using the ConfigMap of Kubernetes as storage of env variables
+. Added the ignore files
+. Predefine the process.env.NODE_ENV ('dev' | 'prod' | 'test' | 'local' | 'jest')
+
+# 2022-06-10
+
+. Replaced the Unit Test tool chain (Mocha, Chai, Sinon, Supertest, Nyc) to Jest
+. Removed the common codes from project and using the shared lib (roxa-jskit)
+. Added the Makefile to integrate the scripts and commands of development
+. Appended tsconfig.build.json and tsconfig.test.json
+
+# 2022-06-05
+
+. Provided the Unit Test tool chain: Mocha, Chai, Sinon, Supertest, Nyc
+. Appended the Unit Test code sample
+. Appended the script of test and coverage
+
+# 2022-06-02
+
+. Added the container image build file - Dockerfile
+. Added the deployment files of GEK
+
+# 2022-06-01
+
+. Added the common validator powered by class-transformer, class-validator and express-validator.
+. Added the http server graceful shutdown listener.
+. Added the NodeJS Env variable delecting.
+. Splits the Auth declaration and implementation.
+. Splits the Repositories or DAOs declaration and implementation.
+. Using the VSCode Prettier Plugin as code formater.
+. Changes the directories layout.
+. The README.md file has been complemented
+. Added the CHANGELOG file
+
+# 2022-05-27
+
+. Creates this scaffold

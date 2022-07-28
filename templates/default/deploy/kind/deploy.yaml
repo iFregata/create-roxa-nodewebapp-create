@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: dev
+  name: dev-deploy-{{name}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dev-{{name}}
+  template:
+    metadata:
+      name: dev-{{name}}
+      labels:
+        app: dev-{{name}}
+        revision: '1'
+    spec:
+      containers:
+      - name: dev-{{name}}-pod
+        image: <YOUR_IMAGE_REGISTRY_BASE_URL>/{{name}}:latest
+        imagePullPolicy: Always
+        envFrom:
+          - configMapRef:
+              name: dev-env-vars
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "128Mi"
+        livenessProbe:
+          httpGet:
+            path: /{{name}}/v1/liveness
+            port: 8181
+          initialDelaySeconds: 15
+          periodSeconds: 20
+          timeoutSeconds: 1
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /{{name}}/v1/readiness
+            port: 8181
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 1
+          failureThreshold: 3
+        ports:
+          - containerPort: 8181
+            protocol: TCP

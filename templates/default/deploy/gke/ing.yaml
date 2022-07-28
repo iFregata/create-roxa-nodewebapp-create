@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ing-apis-dev-foo-com
+  namespace: dev
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: dev-svc-{{name}}
+            port:
+              number: 8181
+        path: /{{name}}
+        pathType: Prefix

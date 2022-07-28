@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  webapi:
+    ports:
+      - "8181:8181"
+    env_file:
+      - ./api.env
+    image: ${REPO_BASE_URL}/${ARTIFACT_NAME}:${TAG}
