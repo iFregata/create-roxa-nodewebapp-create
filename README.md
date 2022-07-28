@@ -7,7 +7,7 @@ The scafflold of Node web backend application
 Node.js v16.x.x
 
 ```bash
-$ npm init roxa-nodewebapp-creator <your-project-name> # Recommends using lower kebab-case as project name
+$ npm init roxa-nodewebapp-create <your-project-name> # Recommends using lower kebab-case as project name
 Need to install the following packages:
   create-roxa-nodewebapp-create
 Ok to proceed? (y) 
