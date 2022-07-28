@@ -11,7 +11,7 @@ Congratulation! your node web app project has been created.
 
 // See https://github.com/uetchy/create-create-app/blob/master/README.md for other options.
 
-create('create-roxa-nodewebapp-creator', {
+create('create-roxa-nodewebapp-create', {
   templateRoot,
   extra: {
     architecture: {

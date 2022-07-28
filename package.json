@@ -1,11 +1,11 @@
 {
-  "name": "create-roxa-nodewebapp-creator",
+  "name": "create-roxa-nodewebapp-create",
   "description": "The scaffold of Node.js web app",
   "version": "0.0.2",
   "author": "Steven Chen <steven@shellpays.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iFregata/create-roxa-nodewebapp-creator.git"
+    "url": "https://github.com/iFregata/create-roxa-nodewebapp-create.git"
   },
   "keywords": ["node.js","create-app","express.js","firebase"],
   "scripts": {
